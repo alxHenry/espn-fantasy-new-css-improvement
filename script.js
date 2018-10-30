@@ -1,6 +1,7 @@
 const getPositionTabs = () => document.querySelectorAll('.Table2__td--fixed-width:nth-child(1)');
 const getStatusTabs = () => document.querySelectorAll('.Table2__td--fixed-width:nth-child(5)');
-const getTableBody = () => document.querySelector('.Table2__table__wrapper tbody:nth-child(1)');
+const getTableBodies = () =>
+  document.querySelectorAll('.Table2__table__wrapper tbody:nth-child(1)');
 const getPageContainer = () => document.querySelector('div.page-container');
 const getTableScroller = () =>
   document.querySelectorAll('.Table2__shadow-scroller .Table2__table-scroll');
@@ -24,8 +25,8 @@ const prepareStatusTabs = () => {
 };
 
 const prepareTableBody = () => {
-  const tableBody = getTableBody();
-  addCustomClassToElements('custom-TableBody', [tableBody]);
+  const tableBodies = getTableBodies();
+  addCustomClassToElements('custom-TableBodies', tableBodies);
 };
 
 const preparePageContainer = () => {
