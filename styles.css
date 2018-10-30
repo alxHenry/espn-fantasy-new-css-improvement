@@ -1,4 +1,4 @@
-.Table2__table__wrapper tbody:nth-child(1) {
+.custom-TableBody {
   display: table;
   margin: auto;
 }
