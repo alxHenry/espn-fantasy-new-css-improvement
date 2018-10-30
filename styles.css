@@ -3,11 +3,17 @@
   margin: auto;
 }
 
-.bp-desktopLGPlus div.page-container {
+div.page-container.custom-PageContainer {
   width: 100%;
 }
 
-.Table2__shadow-scroller .Table2__table-scroll {
+table.Table2__table-scroll.custom-TableScroller {
   table-layout: auto;
   background-color: white;
+}
+
+.Table2__arrow,
+.Table2__shadow--left,
+.Table2__shadow--right {
+  display: none;
 }
