@@ -1,6 +1,5 @@
 .team-page .Table2__table__wrapper tbody:nth-child(1) {
   display: table;
-  margin: auto;
 }
 
 /* Align the table with the container */
