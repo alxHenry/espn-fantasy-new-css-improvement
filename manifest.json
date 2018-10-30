@@ -7,7 +7,7 @@
     {
       "css": ["styles.css"],
       "matches": ["http://fantasy.espn.com/basketball/team?*"],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ],
   "permissions": ["declarativeContent"]
