@@ -6,7 +6,6 @@
   "content_scripts": [
     {
       "css": ["styles.css"],
-      "js": ["script.js"],
       "matches": ["http://fantasy.espn.com/basketball/team?*"],
       "run_at": "document_end"
     }

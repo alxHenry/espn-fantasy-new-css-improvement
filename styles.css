@@ -1,19 +1,26 @@
-.custom-TableBody {
+.team-page .Table2__table__wrapper tbody:nth-child(1) {
   display: table;
   margin: auto;
 }
 
-div.page-container.custom-PageContainer {
-  width: 100%;
+/* Align the table with the container */
+.team-page .players-table__sortable {
+  margin-left: -12px;
 }
 
-table.Table2__table-scroll.custom-TableScroller {
+/* Position and game status columns */
+.team-page .Table2__td--fixed-width:nth-child(1),
+.team-page .Table2__td--fixed-width:nth-child(5) {
+  width: auto !important;
+}
+
+.team-page .Table2__shadow-scroller .Table2__table-scroll {
   table-layout: auto;
   background-color: white;
 }
 
-.Table2__arrow,
-.Table2__shadow--left,
-.Table2__shadow--right {
+.team-page .Table2__arrow,
+.team-page .Table2__shadow--left,
+.team-page .Table2__shadow--right {
   display: none;
 }
