@@ -1,6 +1,6 @@
 {
-  "name": "ESPN New Fantasy Layout Improvement",
-  "version": "1.0",
+  "name": "ESPN Fantasy Basketball Layout Improvement",
+  "version": "0.0.1",
   "description": "Improve the layout of the new ESPN fantasy web site that fantasy basketball uses. Removes the inner table scrolling.",
   "manifest_version": 2,
   "content_scripts": [
@@ -9,6 +9,5 @@
       "matches": ["http://fantasy.espn.com/basketball/team?*"],
       "run_at": "document_idle"
     }
-  ],
-  "permissions": ["declarativeContent"]
+  ]
 }
