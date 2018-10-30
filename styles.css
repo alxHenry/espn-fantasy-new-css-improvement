@@ -1,13 +1,20 @@
-.Table2__table__wrapper tbody:nth-child(1) {
+.team-page .Table2__table__wrapper tbody:nth-child(1) {
   display: table;
   margin: auto;
 }
 
-.bp-desktopLGPlus div.page-container {
-  width: 100%;
+/* Align the table with the container */
+.team-page .players-table__sortable {
+  margin-left: -12px;
 }
 
-.Table2__shadow-scroller .Table2__table-scroll {
+/* Position and game status columns */
+.team-page .Table2__td--fixed-width:nth-child(1),
+.team-page .Table2__td--fixed-width:nth-child(5) {
+  width: auto !important;
+}
+
+.team-page .Table2__shadow-scroller .Table2__table-scroll {
   table-layout: auto;
   background-color: white;
 }
