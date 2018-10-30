@@ -1,23 +1,30 @@
 const prepareDOM = () => {
-  const tabs = getPositionTabs();
-
-  if (!tabs.length) {
-    return;
-  }
-
-  resetPositionTabsWidth(tabs);
+  resetPositionTabsWidth();
+  resetStatusTabsWidth();
 };
 
 const getPositionTabs = () => {
-  return document.querySelectorAll(
-    ".Table2__td.Table2__td--fixed-width:nth-child(1)"
-  );
+  return document.querySelectorAll('.Table2__td--fixed-width:nth-child(1)');
 };
 
-const resetPositionTabsWidth = positionTabs => {
-  positionTabs.forEach(positionTab => {
-    positionTab.style.width = null;
+const getStatusTabs = () => {
+  return document.querySelectorAll('.Table2__td--fixed-width:nth-child(5)');
+};
+
+const resetPositionTabsWidth = () => {
+  const tabs = getPositionTabs();
+  resetElementsInlineWidth(tabs);
+};
+
+const resetStatusTabsWidth = () => {
+  const tabs = getStatusTabs();
+  resetElementsInlineWidth(tabs);
+};
+
+const resetElementsInlineWidth = elements => {
+  elements.forEach(element => {
+    element.style.width = null;
   });
 };
 
-window.addEventListener("load", prepareDOM, false);
+window.addEventListener('load', prepareDOM, false);

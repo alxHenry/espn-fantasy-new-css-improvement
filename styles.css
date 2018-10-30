@@ -1,21 +1,13 @@
 .Table2__table__wrapper tbody:nth-child(1) {
   display: table;
-  width: 100%;
+  margin: auto;
 }
 
 .bp-desktopLGPlus div.page-container {
   width: 100%;
 }
 
-.Table2__td--fixed-width .table--cell.game-status {
-  width: 80px;
-}
-
 .Table2__shadow-scroller .Table2__table-scroll {
   table-layout: auto;
   background-color: white;
-}
-
-.Table2__td.Table2__td--fixed-width {
-  width: 50px;
 }
