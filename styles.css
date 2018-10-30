@@ -2,6 +2,11 @@
   display: table;
 }
 
+/* Make tables available space */
+.team-page .Table2__table__wrapper tbody {
+  width: 100%;
+}
+
 /* Align the table with the container */
 .team-page .players-table__sortable {
   margin-left: -12px;
