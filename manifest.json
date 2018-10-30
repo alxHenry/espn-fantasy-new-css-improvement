@@ -1,7 +1,7 @@
 {
   "name": "ESPN New Fantasy Layout Improvement",
   "version": "1.0",
-  "description": "Improve the layout of the new ESPN fantasy web site that fantasy basketball uses.",
+  "description": "Improve the layout of the new ESPN fantasy web site that fantasy basketball uses. Removes the inner table scrolling.",
   "manifest_version": 2,
   "content_scripts": [
     {
